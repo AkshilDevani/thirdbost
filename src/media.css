@@ -1,0 +1,131 @@
+/* Header Section */
+
+@media (max-width:767px){
+    
+}
+
+
+/* Banner Section */
+
+/* Large  768 - 1199*/
+@media (max-width:1199px)  
+{
+    .banner .content{
+        width: 800px;
+    }
+    .banner .content h1{
+        font-size: 56px;
+        line-height: 70px;
+    }
+    .banner .content p{
+        font-size: 15px;
+    }
+}  
+
+/* Medium 576 - 768 */
+@media (max-width:767px){
+    .banner .content{
+        width: 516px;
+    }
+    .banner .content h1{
+        width: 516px;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .banner .content p{
+        font-size: 14px;
+    }
+}
+
+/* Small 0 -576px */
+@media (max-width:575px){
+    .banner .content{
+        width: 533px;
+    } 
+    .banner .content h1{
+        font-size: 44px;
+        line-height: 60px;
+    }
+    .banner .box p{
+        width: 533px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width:400px)
+{
+    .banner .content{
+        width: 360px;
+    }
+    .banner .content h1{
+        width: 360px;
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .banner .box p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+/* Service Section */
+
+@media (max-width:1199px)
+{
+    .text{
+        width: 720px;
+    }
+    .text h3{
+        font-size: 38px;
+        line-height: 49px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:767px)
+{
+    .text{
+        width: 516px;
+    }
+    .text h3{
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .text p{
+        font-size: 17px;
+    }
+}
+@media (max-width:575px){
+    .text{
+        width: 440px;
+    }
+    .text h3{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .text p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+@media (max-width:400px)
+{
+    .text{
+        width: 350px;
+    }
+    .text h3{
+        font-size: 25px;
+        line-height: 32px
+    }
+    .text p{
+        width: 350px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .news .form input{
+        font-size: 14px;
+    }
+}

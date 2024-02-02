@@ -1,0 +1,220 @@
+
+
+
+body {
+  font-family: 'system-ui';
+  line-height: 26px;
+  background-color: white;
+  font-weight: 400;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.item-center {
+  align-items: center;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* .spacey {
+  padding-top: 90px;
+  padding-bottom: 100px;
+} */
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Default CSS End */
+
+
+/* Header CSS Start */
+
+  nav{
+      background-color: #35352D;
+      padding: 20px 0;
+      /* position: fixed; */
+      left: 0;
+      top: 0;
+      z-index: 999;
+      width: 100%;
+  }
+.header{
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo{
+  display: flex;
+  align-items: center;
+}
+.main_menu{
+  display: flex;
+  align-items: center;
+}
+.main_menu a{
+  color: white;
+  padding: 0 25px;
+  font-size: 18px;
+}
+.header button{
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+}
+.header .btn a{
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: yellow;
+  outline: none;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+}
+.slider{
+  overflow: hidden;
+}
+.slider img{
+  /* width: 100%; */
+  height: 800px;
+}
+
+
+/* Header CSS End */
+
+/* Home page css Start */
+
+.box .img{
+  display: flex;
+  height: 500px;
+}
+.home .box .img{
+  position: relative;
+  overflow: hidden;
+}
+.home .box .img img{
+  width: 100%;
+  display: block;
+}
+
+
+
+/* Home Page Css End */
+
+
+/* Courese Css Start */
+
+.heading .sub_title{
+  margin-bottom: 10px;
+  color: black;
+  padding-left: 30px;
+  position: relative;
+}
+.heading h1{
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.box1{
+  width: 33.33%;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  align-items: center;
+}
+.box1 .img img{
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+.box1 .title{
+  padding:15px;
+}
+.box1 .title a{
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+/*  Our Features Css End */
+.partner .box3{
+    width: 33.33%;
+    height: 100px;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 40px;
+    padding: 37px 0px 40px;
+    margin: 0px 0px 40px;
+    padding-left: 10px;
+}
+.box3 .img{
+    text-align: center; 
+    list-style: none;
+    padding: 0;
+}
+
+/*  Our Features Css End */
+
+/* footer css start */
+
+.footer{
+  background-color: black;
+  padding: 100px;
+
+}
+.footer_content  {
+  color: aliceblue;
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+  margin: 0px auto;
+  max-width: 750px;
+}
+.footer_content a .img  {
+  display: inline-block;
+  max-width: 100%;
+}
+.footer .copyright{
+  padding: 50px;
+}
+.main_btn{
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 48px;
+  border-radius: 10px;
+}
+
+/* footer css end */

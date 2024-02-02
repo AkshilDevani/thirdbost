@@ -1,0 +1,776 @@
+/* Default CSS Start */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #3787C3;
+    --white: #fff;
+    --gray: #6C6C6C;
+    --black: #363636;
+}
+
+body {
+    /* font-family: 'Montserrat'; */
+    line-height: 30px;
+    color: var(--gray);
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+.head_font {
+    /* font-family: 'Montserrat'; */
+    font-weight: 700;
+    line-height: 53px;
+    color: var(--blue);
+}
+
+.spacey {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+/* Default CSS End */
+
+/* Scrollbar Section Start */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px ;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3787c3;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: var(--blue);
+} */
+
+/* Scrollbar Section End */
+
+/* Top Info CSS Start */
+
+.top_info {
+    background-color: var(--blue);
+    padding: 10px 20px 13px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_info a {
+    color: var(--white);
+}
+
+/* Top Info CSS End */
+
+/* Header CSS Start */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.nav {
+    position: sticky !important;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* #basic-navbar-nav
+{
+    flex-grow: 0;
+} */
+.nav .menu {
+    color: var(--blue);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.navbar-toggler {
+    color: var(--blue);
+}
+
+/* Header CSS End */
+
+/* Banner CSS Start */
+
+.banner {
+    background-image: url('./image2/bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 850px;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 25, 29, 0.4);
+    ;
+}
+
+.banner .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: -7px;
+    margin-bottom: 5px;
+}
+
+.banner .content h1 {
+    color: var(--white);
+    font-size: 70px;
+    width: 800px;
+    line-height: 91px;
+}
+
+.banner .content p {
+    color: var(--white);
+    line-height: 30px;
+    font-size: 18px;
+}
+
+/* Banner CSS End */
+
+/* Service CSS Start */
+
+.text {
+    width: 720px;
+}
+
+.text h3 {
+    font-size: 43px;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.text p {
+    font-size: 19px;
+    margin-bottom: 35px;
+    color: var(--gray);
+}
+
+.service .box {
+    border: 1px solid var(--blue);
+    transition: all 0.4s ease-in-out
+}
+
+.service .box .img {
+    overflow: hidden;
+}
+
+.service .box .img img {
+    width: 100%;
+    transition: all 0.4s ease-in-out
+}
+
+.service .box:hover img {
+    transform: scale(1.2);
+}
+
+.service .box .content {
+    padding: 30px 20px;
+}
+
+.service .box .content h5 a {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 31px;
+}
+
+.service .box:hover h5 a {
+    color: var(--blue);
+}
+
+.service .box .content p {
+    line-height: 30px;
+    font-size: 19px;
+}
+
+/* Service CSS End */
+
+/* Overview CSS Start */
+
+.view .box {
+    border: 1px solid var(--blue);
+    transition: all 0.4s ease-in-out;
+    padding: 70px 40px;
+}
+
+.view .box .img img {
+    width: 100px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.view .box .content h5 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 31px;
+    margin: 5px 0 8px 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.view .box:hover h5 {
+    color: var(--blue);
+}
+
+.view .box .content p {
+    line-height: 30px;
+    font-size: 19px;
+}
+
+.view .box:hover {
+    box-shadow: 0px 0px 8px var(--blue);
+}
+
+/* Overview CSS End */
+
+/* Counter CSS Start */
+
+.counter {
+    background-image: url('./image2/asset\ 29.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.counter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 25, 29, 0.4);
+}
+
+.counter h3 {
+    color: var(--white);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.counter .count {
+    font-weight: 700;
+    color: var(--white);
+}
+
+.counter span {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.counter p {
+    color: var(--white);
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.counter .text {
+    z-index: 99;
+}
+
+/* Counter CSS End */
+
+/* Package CSS Start */
+
+.package .item {
+    box-shadow: 0px 4px 24px 0px rgba(106, 105, 194, 0.25);
+    padding: 50px 30px;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.package .item h6 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.package .item h3 {
+    font-size: 48px;
+    color: var(--black);
+    line-height: 57px;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+}
+
+.package .item p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+.package .item ul {
+    margin-top: 20px;
+}
+
+.package .item li {
+    line-height: 45px;
+    font-size: 500;
+    color: var(--gray);
+    transition: all 0.4s ease-in-out;
+}
+
+.package .item .button {
+    margin-top: 20px;
+}
+
+.package .item .button .btn {
+    padding: 15px 30px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.package .items {
+    background-color: var(--blue);
+}
+
+.package .items h3,
+.package .items h6,
+.package .items p,
+.package .items li {
+    color: var(--white);
+}
+
+.package .items .button .btn {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.package .item:hover {
+    transform: translateY(-15px);
+    background-color: var(--blue);
+}
+
+.package .item:hover h6,
+.package .item:hover p,
+.package .item:hover h3,
+.package .item:hover li {
+    color: var(--white);
+}
+
+.package .item:hover .btn {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+/* Package CSS End */
+
+/* Project CSS Start */
+
+.pro .box {
+    position: relative;
+}
+
+.pro .box .img {
+    position: relative;
+}
+
+.pro .box .img img {
+    width: 100%;
+}
+
+.pro .box .img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(42, 133, 203, 0.8);
+    ;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.pro .box:hover .img::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pro .box .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.pro .box:hover .content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pro .box .content h4 a {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.pro .box .content .link li a {
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    border-radius: 5px;
+    line-height: 36px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Project CSS End */
+
+/* Team CSS Start */
+
+.team .box {
+    position: relative;
+}
+
+.team .box .img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .box .img img {
+    width: 100%;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+
+.team .box:hover img {
+    transform: scale(1.2);
+}
+
+.team .box .img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(42, 133, 203, 0.8);
+    ;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.team .box:hover .img::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.team .box .content {
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.team .box:hover .content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.team .box .content h4 a {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.team .box .content p {
+    color: var(--white);
+    font-size: 18px;
+}
+
+.team .box .content .link li a {
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    border-radius: 50%;
+    line-height: 36px;
+    color: var(--blue);
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.team .box .content .link a:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* Team CSS End */
+
+/* Testimonial CSS Start */
+
+.bg {
+    padding: 120px 0;
+}
+
+.testi .item {
+    /* background-color: red; */
+
+}
+
+.testi1 .item .img {
+    padding-bottom: 15px;
+}
+
+.testi .item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.testi .item .content h5 {
+    color: var(--black);
+    font-size: 24px;
+}
+
+.testi .item .content p {
+    font-size: 18px;
+}
+
+.owl-nav {
+    margin-top: 30px !important;
+}
+
+.owl-theme .owl-nav button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+    font-size: 18px !important;
+}
+
+/* .owl-carousel .owl-nav button .owl-prev span{
+    margin-top: 10px;
+}
+.owl-carousel .owl-nav button.owl-prev span{
+    margin-top: 20px;
+} */
+
+/* Testimonial CSS End */
+
+/* Blog CSS Start */
+
+.blog .box {
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 24px 0px rgba(106, 105, 194, 0.25);
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.blog .box .img {
+    overflow: hidden;
+    position: relative;
+}
+
+.blog .box .img img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.blog .box .content {
+    padding: 30px 20px;
+}
+
+.blog .box .content h6 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.blog .box .content h6 a {
+    color: var(--black);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.blog .box:hover {
+    transform: translateY(-15px);
+}
+
+.blog .box:hover img {
+    transform: scale(1.2);
+}
+
+.blog .box:hover h6 a {
+    color: var(--blue);
+}
+
+/* Blog CSS End */
+
+/* Newsletter CSS Start */
+
+.news {
+    padding: 70px 0;
+    background-color: var(--blue);
+}
+
+.news h4 {
+    color: var(--white);
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.news .form {
+    position: relative;
+}
+
+.news .form input {
+    color: var(--blue);
+    width: 100%;
+    padding: 22px 40% 22px 35px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.news .form .plane {
+    position: absolute;
+    top: 30px;
+    left: 14px;
+    color: var(--blue);
+}
+
+.news .form .button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.news .form .button .btn {
+    border-radius: 5px;
+    color: var(--white);
+    padding: 16px 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--blue);
+    box-shadow: 0px 18px 30px 0px rgba(100, 159, 205, 0.36);
+}
+
+/* Newsletter CSS End */
+
+/* Footer CSS Start */
+
+.footer {
+    background-color: rgba(34, 54, 69, 0.98);
+}
+
+.footer .footer_head p {
+    margin-top: 30px;
+    color: var(--white);
+    font-size: 18px;
+}
+
+.footer .social {
+    margin-right: 15px;
+    color: var(--blue);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer .footer_head h5 {
+    color: var(--white);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer .footer_head li a {
+    color: var(--white);
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+
+.footer .footer_head li:hover a {
+    color: var(--blue);
+}
+
+.footer .footer_head li {
+    color: var(--white);
+    transition: all 0.4s ease-in-out;
+}
+
+/* .footer .footer_head li:hover{
+    padding-right: 5px;
+} */
+
+.area {
+    border-top: 1px solid var(--blue);
+}
+
+.bottom {
+    padding: 30px 0;
+}
+
+.bottom p {
+    color: var(--white);
+    text-align: center;
+}
+
+/* Footer CSS End */
